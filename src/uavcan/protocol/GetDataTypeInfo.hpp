@@ -13,7 +13,7 @@
 #include <uavcan/node/global_data_type_registry.hpp>
 #include <uavcan/marshal/types.hpp>
 
-#include <uavcan\protocol\DataTypeKind.hpp>
+#include <uavcan/protocol/DataTypeKind.hpp>
 
 /******************************* Source text **********************************
 #

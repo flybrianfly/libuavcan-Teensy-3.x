@@ -47,7 +47,7 @@ static const char* NODE_NAME = "TEST";
 static const uint32_t NODE_MEM = 8192;  // size of node memory
 
 /* System clock and CAN driver */
-ISystemClock *clock = &uavcan_teensy::SystemClock::instance();
+ISystemClock *uav_clock = &uavcan_teensy::SystemClock::instance();
 ICanDriver *can;
 
 /* Node and publisher */
@@ -94,7 +94,7 @@ void setup() {
   uavcan_teensy::CanDriver::instance().init(iface_param);
   can = &uavcan_teensy::CanDriver::instance();
   /* Init Node */
-  node = new Node<NODE_MEM>(*can, *clock);
+  node = new Node<NODE_MEM>(*can, *uav_clock);
   protocol::SoftwareVersion sw_ver;
   protocol::HardwareVersion hw_ver;
   sw_ver.major = SW_VER;

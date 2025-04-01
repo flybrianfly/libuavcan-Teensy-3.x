@@ -13,7 +13,7 @@
 #include <uavcan/node/global_data_type_registry.hpp>
 #include <uavcan/marshal/types.hpp>
 
-#include <uavcan\protocol\CANIfaceStats.hpp>
+#include <uavcan/protocol/CANIfaceStats.hpp>
 
 /******************************* Source text **********************************
 #
